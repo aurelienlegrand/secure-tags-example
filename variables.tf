@@ -4,6 +4,6 @@ variable "project_id" {
 }
 
 variable "tag_users" {
-  description = "IAM binding for who can use the secure tag, for example 'user:jane@example.com.'"
+  description = "IAM binding for who can use the secure tag, for example 'user:jane@example.com'"
   type        = string
 }
