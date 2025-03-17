@@ -30,6 +30,6 @@ resource "google_tags_tag_value_iam_binding" "binding" {
   tag_value = google_tags_tag_value.app01.name
   role = "roles/resourcemanager.tagUser"
   members = [
-    "user:network@ale-cloud.com",
+    "${var.tag_users}",
   ]
 }
